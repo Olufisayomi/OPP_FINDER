@@ -1,0 +1,28 @@
+[
+  {
+    "id": "example-001",
+    "name": "EXAMPLE: Sample Scholarship (replace with a real one)",
+    "type": "scholarship",
+    "organisation": "Example Foundation",
+    "deadline": "2030-01-31",
+    "eligibility_text": "Placeholder text. Penultimate-year students in science or engineering.",
+    "levels": ["300", "400"],
+    "fields": ["Computer Science", "Engineering"],
+    "link": "https://example.com/replace-me",
+    "date_collected": null,
+    "is_example": true
+  },
+  {
+    "id": "example-002",
+    "name": "EXAMPLE: Sample Internship (replace with a real one)",
+    "type": "internship",
+    "organisation": "Example Company",
+    "deadline": "2030-02-15",
+    "eligibility_text": "Placeholder text. Any student interested in software and data.",
+    "levels": [],
+    "fields": [],
+    "link": "https://example.com/replace-me-too",
+    "date_collected": null,
+    "is_example": true
+  }
+]
