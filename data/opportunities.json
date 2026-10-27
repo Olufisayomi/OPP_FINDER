@@ -1,28 +1,68 @@
+
 [
   {
-    "id": "example-001",
-    "name": "EXAMPLE: Sample Scholarship (replace with a real one)",
-    "type": "scholarship",
-    "organisation": "Example Foundation",
-    "deadline": "2030-01-31",
-    "eligibility_text": "Placeholder text. Penultimate-year students in science or engineering.",
-    "levels": ["300", "400"],
-    "fields": ["Computer Science", "Engineering"],
-    "link": "https://example.com/replace-me",
-    "date_collected": null,
-    "is_example": true
+    "id": "opp-001",
+    "name": "Millennium Fellowship Class of 2027",
+    "type": "learning",
+    "organisation": "Millennium Campus Network and United Nations Academic Impact",
+    "deadline": "2026-10-31",
+    "eligibility_text": "Applicants must be at least 18 years old, be enrolled undergraduate students throughout August to November 2027, and have an interest in social impact work. Applications are reviewed on a rolling basis. October 31, 2026 is the next priority deadline.",
+    "levels": ["100", "200", "300", "400", "500"],
+    "fields": [],
+    "link": "https://www.millenniumfellows.org/apply",
+    "date_collected": "2026-10-26",
+    "is_example": false
   },
   {
-    "id": "example-002",
-    "name": "EXAMPLE: Sample Internship (replace with a real one)",
+    "id": "opp-002",
+    "name": "Mastercard Foundation Scholars Program at UCT",
+    "type": "scholarship",
+    "organisation": "University of Cape Town and Mastercard Foundation",
+    "deadline": "2026-10-31",
+    "eligibility_text": "For eligible postgraduate diploma, honours and coursework master's applicants at the University of Cape Town. Applicants must be citizens of an African country, demonstrate academic ability, face significant financial barriers to education, show leadership potential, and be committed to serving their communities. Undergraduate applications for the 2027 intake are closed. Programme-specific requirements apply.",
+    "levels": ["postgraduate"],
+    "fields": ["Commerce", "Engineering", "Health Sciences", "Humanities", "Law", "Science"],
+    "link": "https://uct.ac.za/mastercardfdn/apply-mastercard-foundation-scholars-program",
+    "date_collected": "2026-10-26",
+    "is_example": false
+  },
+  {
+    "id": "opp-003",
+    "name": "MLH Fellowship Open Source Track",
     "type": "internship",
-    "organisation": "Example Company",
-    "deadline": "2030-02-15",
-    "eligibility_text": "Placeholder text. Any student interested in software and data.",
+    "organisation": "Major League Hacking",
+    "deadline": null,
+    "eligibility_text": "The Spring 2027 programme runs from January 25 to April 16, 2027. Applications are processed on a rolling basis and close a few weeks before the batch begins. Applicants must be over 18, know how to code proficiently in at least one programming language, communicate proficiently in English, and be able to commit at least 20 hours per week. Location and other programme requirements apply.",
     "levels": [],
+    "fields": ["Computer Science", "Computer Engineering", "Software Engineering", "Information Technology"],
+    "link": "https://fellowship.mlh.com/programs/open-source",
+    "date_collected": "2026-10-26",
+    "is_example": false
+  },
+  {
+    "id": "opp-004",
+    "name": "Cloneshouse Internship Programme 2027",
+    "type": "internship",
+    "organisation": "Cloneshouse Foundation",
+    "deadline": "2026-11-06",
+    "eligibility_text": "Open to young and emerging professionals from eligible West African and other listed West and Central African countries, including Nigeria. Suitable interests include monitoring and evaluation, research, evidence generation, business development, development practice, and impact technology. Applicants should be curious, diligent, willing to learn, and ready to participate actively.",
+    "levels": [],
+    "fields": ["Computer Engineering", "Computer Science", "Information Technology", "Data Science", "Business", "Research"],
+    "link": "https://www.cloneshousefoundation.org/cloneshouse-internship-programme/",
+    "date_collected": "2026-10-26",
+    "is_example": false
+  },
+  {
+    "id": "opp-005",
+    "name": "Ruth Titilayo Educational Foundation Undergraduate Scholarship 2027",
+    "type": "scholarship",
+    "organisation": "Ruth Titilayo Educational Foundation",
+    "deadline": "2026-10-31",
+    "eligibility_text": "Applicants must be under 25, domiciled in Nigeria, and currently studying at a federal or state university in Nigeria, or have been registered as a student within the last three years. Applicants must have a minimum GPA of 4.0 on a 5-point scale or equivalent. Final-year undergraduates are eligible. Awards depend on academic merit and application assessment.",
+    "levels": ["100", "200", "300", "400", "500"],
     "fields": [],
-    "link": "https://example.com/replace-me-too",
-    "date_collected": null,
-    "is_example": true
+    "link": "https://ruthtitilayofoundation.org/ruth-titilayo-undergraduate-scholarship/",
+    "date_collected": "2026-10-26",
+    "is_example": false
   }
 ]
