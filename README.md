@@ -33,7 +33,7 @@ pip install -r requirements.txt
 cp .env.example .env                                   # then edit if needed
 
 # the model (needs https://ollama.com installed)
-ollama pull qwen2.5:3b          # replace with the model you chose; set MODEL_NAME to match
+ollama pull smollm2:360m       
 
 uvicorn backend.main:app --reload     # API + test page at http://localhost:8000/docs
 python app.py                         # student screen (second terminal)

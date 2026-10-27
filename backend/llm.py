@@ -1,7 +1,7 @@
 """All talking to the open-weight model lives here.
 
 Default setup: Ollama running locally (https://ollama.com).
-    ollama pull qwen2.5:3b        # or any model you chose AND checked the licence of
+    ollama pull smollm2:360m        
     set MODEL_NAME to match
 
 Two jobs for the model:
@@ -21,7 +21,7 @@ import requests
 from .models import Opportunity, StudentProfile
 
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434")
-MODEL_NAME = os.getenv("MODEL_NAME", "qwen2.5:3b")   # CHANGE after you check the licence
+MODEL_NAME = os.getenv("MODEL_NAME", "smollm2:360m") 
 TIMEOUT = int(os.getenv("LLM_TIMEOUT", "120"))
 
 
