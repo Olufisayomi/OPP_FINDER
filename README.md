@@ -19,18 +19,22 @@ and the deadline. Built for OPEN//BUILD 2026 (OSCA Ile-Ife, Hacktoberfest 2026).
 4. A separate team feature lets us paste a messy announcement and the model drafts a
    structured record, which a human checks before saving.
 
-## 3. The model  (TODO: complete before submitting)
-- Model: `...` (size, source)
-- **Licence:** `...`  — checked on (date) at (link). Open weights are not automatically open source.
-- Role: extraction of records + explanations. Not used for matching decisions.
-- Why this model: ...
-- Known limitations: may misread dates, may be wrong on rules, slower on a laptop CPU.
+## 3. The model 
+- **Model:** SmolLM2-360M-Instruct by Hugging Face (HuggingFaceTB), about 360 million parameters. We run it locally through Ollama as `smollm2:360m` (725 MB download). Source: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
+- **Licence:** Apache 2.0, checked on 2026-10-27 at the model card above (https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct/blob/main/README.md). Open weights are not automatically open source, so we read the licence terms before using the model.
+- **Role:** reads a pasted opportunity announcement and drafts a structured record (a person checks it before saving), and writes a short plain-English explanation of why a student may qualify. It is not used for matching decisions: plain-code rules decide who qualifies.
+- **Why this model:** it is small enough to run on student laptops with limited memory. We first tried Qwen2.5-1.5B, but it took about 2 minutes to respond on our laptop and caused the computer to stop responding, so we switched to a smaller model.
+- **Known limitations:**
+  - The model card says it mainly handles English and may not be factually accurate, so every result links to the official page for confirmation.
+  - May misread dates or eligibility rules when drafting records, so drafts are checked by a person.
+  - May be vague or invent details in explanations. TODO: add one or two real examples from our testing.
+  - Slower on a laptop CPU, especially the first reply after the model has been idle. It took more than a minute.
 
 ## 4. Run it
 ```bash
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env                                   # then edit if needed
+Settings are optional environment variables, see .env.example for the names.                              
 
 # the model (needs https://ollama.com installed)
 ollama pull smollm2:360m       
