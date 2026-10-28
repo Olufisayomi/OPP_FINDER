@@ -34,7 +34,7 @@ def _chat(system: str, user: str, as_json: bool = False) -> str:
         "model": MODEL_NAME,
         "stream": False,
         "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
-        "options": {"temperature": 0.1},
+        "options": {"temperature": 0.1, "num_predict": 150},
     }
     if as_json:
         payload["format"] = "json"
@@ -55,13 +55,30 @@ deadline (YYYY-MM-DD or null), eligibility_text (short, copied/condensed from th
 levels (list from: 100,200,300,400,500,postgraduate,graduate; [] if any),
 fields (list of courses/areas; [] if any), link (url from the text or null)."""
 
-
 def parse_extraction(raw_json: str, fallback_id: str, source_link: str = "") -> Opportunity:
     """Turn the model's JSON text into a validated Opportunity. Raises ValueError if unusable."""
     m = re.search(r"\{.*\}", raw_json, re.S)
     if not m:
         raise ValueError("model did not return JSON")
     data = json.loads(m.group(0))
+
+    # Small models often write "None", "null" or "N/A" as text. Treat those as empty.
+    empty_words = {"", "none", "null", "n/a", "na", "unknown", "not stated", "not specified"}
+    for key, value in list(data.items()):
+        if isinstance(value, str) and value.strip().lower() in empty_words:
+            data[key] = None
+
+    # A deadline that is not a clean YYYY-MM-DD date becomes "no deadline stated".
+    if data.get("deadline") and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(data["deadline"]).strip()):
+        data["deadline"] = None
+
+    # Lists must be lists, and the type must be lowercase.
+    for key in ("levels", "fields"):
+        value = data.get(key)
+        data[key] = [value] if isinstance(value, str) else (value or [])
+    if isinstance(data.get("type"), str):
+        data["type"] = data["type"].strip().lower()
+
     data["id"] = fallback_id
     data["link"] = data.get("link") or source_link
     if not data["link"]:
@@ -69,8 +86,6 @@ def parse_extraction(raw_json: str, fallback_id: str, source_link: str = "") -> 
     for key in ("name", "type"):
         if not data.get(key):
             raise ValueError(f"model did not find '{key}'")
-    data["levels"] = data.get("levels") or []
-    data["fields"] = data.get("fields") or []
     data["eligibility_text"] = data.get("eligibility_text") or ""
     data["organisation"] = data.get("organisation") or ""
     return Opportunity(**data)

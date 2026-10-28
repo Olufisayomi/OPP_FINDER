@@ -26,7 +26,7 @@ def list_opportunities(include_examples: bool = False):
 class MatchRequest(BaseModel):
     profile: StudentProfile
     explain: bool = True          # set False for instant results without the model
-    limit: int = 5                # only the top N get a model explanation (keeps it fast)
+    limit: int = 3               # only the top N get a model explanation (keeps it fast)
     include_examples: bool = False
 
 
