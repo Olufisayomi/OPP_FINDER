@@ -89,6 +89,11 @@ def near_misses(profile: StudentProfile, opportunities: List[Opportunity],
             step = ("Check the official page for when you become eligible or for the next intake, "
                     "and look for similar opportunities open to your level.")
         else:
+            # A different course is only worth showing when the student's interests overlap
+            # with the opportunity. Otherwise (e.g. nursing vs software) it is just noise.
+            text_words = _words(" ".join([opp.name, opp.eligibility_text, " ".join(opp.fields)]))
+            if not any(_words(i) & text_words for i in profile.interests):
+                continue
             gap = f"Open to students in {', '.join(opp.fields)}; your course is {profile.course}."
             step = ("Check the official page to see whether your course can still apply, "
                     "and look for similar opportunities open to your course.")

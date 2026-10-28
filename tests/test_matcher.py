@@ -64,10 +64,14 @@ def test_level_gap_is_a_near_miss():
     assert out[0].next_step
 
 
-def test_course_gap_is_a_near_miss():
-    p = StudentProfile(course="Accounting", level="300")
-    out = near_misses(p, [opp(fields=["Computer Science"])], today=TODAY)
+def test_course_gap_is_a_near_miss_only_with_shared_interest():
+    o = opp(fields=["Computer Science"])
+    with_interest = StudentProfile(course="Accounting", level="300", interests=["computer"])
+    out = near_misses(with_interest, [o], today=TODAY)
     assert len(out) == 1 and "Computer Science" in out[0].gaps[0]
+    no_interest = StudentProfile(course="Nursing", level="300", interests=["health"])
+    assert near_misses(no_interest, [o], today=TODAY) == []
+    assert near_misses(StudentProfile(course="Nursing", level="300"), [o], today=TODAY) == []
 
 
 def test_two_gaps_is_too_far():
