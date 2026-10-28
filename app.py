@@ -59,4 +59,4 @@ with gr.Blocks(title="OppFinder") as demo:
         btn.click(draft, [raw, link, nid], out)
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(share=os.getenv("SHARE") == "1")

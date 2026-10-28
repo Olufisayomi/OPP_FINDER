@@ -50,6 +50,33 @@ python app.py                         # student screen (second terminal)
 ```
 Run tests: `pytest`
 
+# Optional: temporary public demo link
+
+The judges can run OppFinder with the steps above. As a convenience, the screen can also be shared through a temporary public link made by Gradio. **This link is not permanent hosting.** The app still runs on one of our laptops, so the link only works while that laptop is on, online, and running the API and Ollama. It also expires after about a week.
+
+**Current demo link: https://5ebff648a818f24c65.gradio.live created at 23:32 on 28-10-26
+
+If the link does not open, please use the demo video or the run instructions above.
+
+### How we create the link
+1. Start Ollama and the API (see "Run it").
+2. In a second terminal, from the project folder, switch on the virtual environment and run:
+
+```powershell
+$env:SHARE="1"
+python app.py
+```
+
+3. Gradio prints a public address ending in `.gradio.live`. Copy it.
+
+Without `SHARE=1`, the app is only available on your own computer at `http://127.0.0.1:7860`, so no public link is created by accident.
+
+### What to know before using it
+- The first reply from the model can take a minute or more on our laptop CPU.
+- The public screen only searches the opportunity list and drafts records. It does not save or change any data.
+- Please do not enter personal or private information.
+- Results are from a small, hand-collected dataset, so always confirm details on the official page.
+
 ## 5. Project layout
 ```
 backend/models.py    the two "forms": Opportunity (record) and StudentProfile
