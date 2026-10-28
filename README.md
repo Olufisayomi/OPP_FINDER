@@ -1,16 +1,23 @@
 # OppFinder
 
-Helps university students in Nigeria find scholarships, internships, jobs and learning
+Helps university undergraduate, graduate and post graduate in Nigeria find scholarships, internships, jobs and learning
 opportunities they may qualify for, and explains in plain English why, what to prepare,
 and the deadline. Built for OPEN//BUILD 2026 (OSCA Ile-Ife, Hacktoberfest 2026).
 
 > **Status:** early prototype. Opportunity data is collected by hand from official pages.
 > Always confirm details on the official link shown with each result.
 
-## 1. The problem  (TODO: fill in with what 3 students told you)
-- Who: ...
-- What goes wrong today: ...
-- Why it matters: ...
+## 1. The problem
+University students often discover scholarships, internships, jobs and learning opportunities through scattered channels such as WhatsApp groups, social media, friends and websites. Finding opportunities is only part of the challenge: students also need to determine whether they qualify, understand the requirements and keep track of deadlines.
+
+To understand these challenges, we asked **28 students** about their opportunity-search experiences. Among the respondents:
+
+- **24** had searched for an opportunity they ultimately did not apply for.
+- **25** had found an opportunity and later discovered they were ineligible at least once.
+- Finding opportunities and determining eligibility were the most frequently reported frustrations.
+- **27** said they would definitely or probably use a tool that recommends relevant opportunities and explains eligibility.
+
+OppFinder addresses these challenges by bringing opportunity records together, filtering and ranking them against student profiles, and using an open-weight language model to explain potential matches in plain English. When a student does not qualify yet, it also shows what is missing and suggests what to do next.
 
 ## 2. How it works
 1. A student enters course, level, interests and what they want.
@@ -75,11 +82,89 @@ tests/               tests for matching and model-output parsing
 
 ## 8. Acknowledgements and AI-assisted work 
 - Libraries: FastAPI, Pydantic, Gradio, Requests, Ollama.
-- Data sources: list each source page used.
 - AI-assisted work: the initial project scaffold was drafted with an AI assistant (Claude) and
   reviewed by the team.
 
-## 9. Known limitations / next steps
+## 9. Data sources
+Opportunity records are collected by hand from official pages and stored in `data/opportunities.json`. Each record has the official link and the date it was last checked. We do not scrape websites, and details can change, so students should always confirm on the official page.
+
+Sources used (checked October 2026):
+- - [MTN Science and Technology Scholarship (STS)](https://www.mtn.ng/scholarships/) (MTN Foundation), checked 2026-10-25
+- [MTN Scholarship for Blind Students (SBS)](https://www.mtn.ng/scholarships/) (MTN Foundation), checked 2026-10-25
+- [MTN Top 10 UTME Scholarship](https://www.mtn.ng/scholarships/) (MTN Foundation), checked 2026-10-25
+- [MTN FoundationûMUSON Music Scholarship](https://www.mtn.ng/muson/) (MTN Foundation & MUSON), checked 2026-10-01
+- [NLNG Undergraduate Scholarship Scheme](https://jobs.dragnet-solutions.com/nlngscholarship/home) (Nigeria LNG Limited (NLNG)), checked 2026-10-25
+- [Mastercard Foundation Scholars Program at UCT](https://uct.ac.za/mastercardfdn/apply-mastercard-foundation-scholars-program) (Mastercard Foundation & University of Cape Town), checked 2026-10-25
+- [Mastercard Foundation Scholars Program at KNUST](https://apps.knust.edu.gh/nkabomapply) (Mastercard Foundation & KNUST), checked 2026-10-01
+- [Chevening Scholarships (Nigeria) 2027/28](https://www.chevening.org/scholarship/nigeria/) (UK FCDO), checked 2026-10-25
+- [Cowrywise Ambassadors Scholarship Program](https://ambassadors.cowrywise.com/scholarship) (Cowrywise & CFA Institute), checked 2026-10-01
+- [AIMS South Africa û Google DeepMind AI for Science Master's Scholarship](https://ai.aims.ac.za/) (Google DeepMind & AIMS), checked 2026-10-25
+- [DAAD In-Country / In-Region Scholarships](https://cooperation.ucad.sn/sites/default/files/ICIR_Fact%20Sheet_2027_1_compressed.pdf) (DAAD (Germany)), checked 2026-10-25
+- [Seplat Energy Undergraduate Scholarship](https://seplatenergy.com/sustainability/csr/) (Seplat Energy Plc), checked 2026-10-01
+- [Shell Nigeria University Scholarship](https://www.shell.com.ng/sustainability/communities/scholarships.html) (SPDC / Shell Nigeria), checked 2026-10-01
+- [Federal Government BEA Overseas Scholarship](https://education.gov.ng/) (Federal Ministry of Education (Nigeria)), checked 2026-10-01
+- [NDDC Local Postgraduate Scholarship](https://www.nddc.gov.ng/) (Niger Delta Development Commission), checked 2026-10-01
+- [Gates Cambridge Scholarship 2027/28](https://www.gatescambridge.org/apply/timeline/) (Gates Cambridge Trust), checked 2026-10-25
+- [Commonwealth Master's and PhD Scholarships 2027/28](https://cscuk.fcdo.gov.uk/) (Commonwealth Scholarship Commission (UK)), checked 2026-10-25
+- [PTDF Overseas Postgraduate Scholarship 2026/27](https://scholarship.ptdf.gov.ng/guidelines) (Petroleum Technology Development Fund (Nigeria)), checked 2026-10-25
+- [PTDF In-Country Scholarship Scheme 2026/27](https://scholarship.ptdf.gov.ng/) (Petroleum Technology Development Fund (Nigeria)), checked 2026-10-25
+- [Mastercard Foundation Scholars, University of Cambridge 2026/27](https://mastercardfoundation.fund.cam.ac.uk/news/applications-20262027-academic-year-are-now-open) (Mastercard Foundation / University of Cambridge), checked 2026-10-25
+- [Mastercard Foundation Graduate Scholarship, University of Toronto 2026/27](https://internationalexperience.utoronto.ca/) (Mastercard Foundation / University of Toronto), checked 2026-10-25
+- [Mastercard Foundation Scholars, University of the Western Cape](https://www.uwc.ac.za/study/partnerships/mastercard-foundation-scholars-program) (Mastercard Foundation / UWC), checked 2026-10-25
+- [Mastercard Foundation Scholars, University of Pretoria](https://www.up.ac.za/mastercard-foundation-scholarship-program) (Mastercard Foundation / University of Pretoria), checked 2026-10-25
+- [Swedish Institute Scholarships for Global Professionals 2027/28](https://si.se/en/apply/scholarships/swedish-institute-scholarships-for-global-professionals/) (Swedish Institute), checked 2026-10-25
+- [Stipendium Hungaricum 2027/28](https://abuja.mfa.gov.hu/en/articles/general-information-and-faq-of-the-stipendium-hungaricum-scholarship-program) (Hungary (Tempus Public Foundation)), checked 2026-10-25
+- [Tⁿrkiye Scholarships 2027](https://turkiyeburslari.gov.tr/) (Tⁿrkiye (YTB)), checked 2026-10-25
+- [Global Futures Scholarships for Africa (UK undergraduate)](https://www.ucas.com/explore/scholarships-and-bursaries/be6aed02-57fc-42f1-8aa8-d04e00192d42/global-futures-scholarships-for-africa---undergraduate) (Listed on UCAS (provider Not verified)), checked 2026-10-25
+- [Northumbria International Scholarship (PGT, Nigerian applicants)](https://www.ucas.com/explore/scholarships-and-bursaries/522dd965-1128-4229-9214-e4660d0f9f98/2026-27-ug-international-scholarship-for-nigerian-applicants) (Northumbria University), checked 2026-10-25
+- [NOHA Erasmus Mundus Joint Master's in International Humanitarian Action 2027û29](https://www.nohanet.org/masters) (NOHA Network (Erasmus Mundus)), checked 2026-10-25
+- [University of Melbourne Graduate Research Scholarships](https://scholarships.unimelb.edu.au/awards/graduate-research-scholarships) (University of Melbourne), checked 2026-10-25
+- [Mastercard Foundation Scholars, University of Edinburgh 2027/28](https://edinburgh-global.ed.ac.uk/mastercard-foundation-scholars-program/apply-for-a-scholarship/how-to-apply) (Mastercard Foundation / University of Edinburgh), checked 2026-10-25
+- [Maastricht University NL-High Potential Scholarship 2027/28](https://www.maastrichtuniversity.nl/support/your-studies-begin/coming-maastricht-university-abroad/scholarships/maastricht-university) (Maastricht University), checked 2026-10-25
+- [York University President's International Scholarship of Excellence (PISE)](https://futurestudents.yorku.ca/financial-support) (York University (Canada)), checked 2026-10-25
+- [AfOx Graduate Scholarships (Oxford MBA) 2027/28](https://www.sbs.ox.ac.uk/oxford-experience/scholarships-and-funding/afox-graduate-scholarships) (Africa Oxford Initiative / Mastercard Foundation / Sa∩d Business School), checked 2026-10-25
+- [NNPC/SNEPCo National University Scholarship 2026](https://www.shell.com.ng/careers/scholarships.html) (NNPC / SNEPCo (Shell Nigeria Exploration and Production Company)), checked 2026-10-27
+- [BOC Sciences Chemistry Scholarship Program 2026](https://www.bocsci.com/chemistry-scholarship-program.html) (BOC Sciences (BOCSCI Inc.)), checked 2026-10-27
+- [Mandela Washington Fellowship 2027](https://apply.mandelawashingtonfellowship.org/) (U.S. Department of State / IREX), checked 2026-10-25
+- [MWF Reciprocal Exchange Component 2027](https://www.mandelawashingtonfellowship.org/2026/10/21/2027-reciprocal-exchange-component-application/) (U.S. Department of State / IREX), checked 2026-10-25
+- [Millennium Fellowship Class of 2027](https://www.millenniumfellows.org/apply) (Millennium Campus Network & UN Academic Impact), checked 2026-10-25
+- [Jim Leech Mastercard Foundation Fellowship on Entrepreneurship 2027](https://www.queensu.ca/innovationcentre/programs/jim-leech-mastercard-foundation-fellowship-entrepreneurship) (Queen's University (DDQIC) & Mastercard Foundation), checked 2026-10-27
+- [Cowrywise Campus Ambassadors Program](https://ambassadors.cowrywise.com/register) (Cowrywise), checked 2026-10-01
+- [Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com/) (Google), checked 2026-10-25
+- [MLH Fellowship](https://fellowship.mlh.com/) (Major League Hacking (MLH)), checked 2026-10-25
+- [Outreachy Remote Internship](https://www.outreachy.org/) (Software Freedom Conservancy), checked 2026-10-25
+- [Microsoft Leap Apprenticeship](https://leap.microsoft.com/) (Microsoft (Leap) with Africa Development Centre partners), checked 2026-10-25
+- [Flutterwave Internship & Accelerator](https://flutterwave.com/us/careers) (Flutterwave), checked 2026-10-01
+- [IBM Great Minds Student Internship](https://www.research.ibm.com/labs/africa/) (IBM Research Zurich / Africa), checked 2026-10-01
+- [LPI Summer Intern Program in Planetary Science 2027](https://www.lpi.usra.edu/lpiintern/) (Lunar and Planetary Institute (USRA), Houston), checked 2026-10-27
+- [MTN Global Graduate Development Program](https://www.mtn.ng/career/global-graduates/) (MTN Nigeria), checked 2026-10-25
+- [Interswitch Graduate Trainee Programme](https://www.interswitchgroup.com/careers) (Interswitch Group), checked 2026-10-01
+- [Access Bank Graduate Trainee Program](https://www.accessbankplc.com/careers) (Access Bank Plc), checked 2026-10-01
+- [TotalEnergies Young Graduate Program](https://totalenergies.com/careers) (TotalEnergies Nigeria), checked 2026-10-01
+- [Standard Bank Group Graduate Programme](https://www.standardbank.com/careers) (Standard Bank / Stanbic IBTC), checked 2026-10-01
+- [KPMG Nigeria Graduate Trainee Programme](https://home.kpmg/ng/en/home/careers.html) (KPMG Nigeria), checked 2026-10-01
+- [PwC Nigeria Graduate Trainee Programme](https://www.pwc.com/ng/en/careers.html) (PwC Nigeria), checked 2026-10-01
+- [Volvo Group Graduate Programs (Sweden) 2027 intake](https://www.volvogroup.com/careers) (Volvo Group), checked 2026-10-27
+- [American Impact Award](https://www.mandelawashingtonfellowship.org/2026/09/01/american-impact-award-application-now-open/) (U.S. Department of State / IREX), checked 2026-10-25
+- [MTN Y'ellopreneur Grant & Loan Initiative](https://www.mtn.ng/foundation/) (MTN Foundation), checked 2026-10-01
+- [Hult Prize (EF Hult Prize) 2026û27](https://www.hultprize.org/register) (Hult Prize Foundation / EF), checked 2026-10-25
+- [Tony Elumelu Foundation Entrepreneurship Programme](https://www.tefconnect.com/) (Tony Elumelu Foundation), checked 2026-10-25
+- [Data Science Nigeria AI Hackathon](https://datasciencenigeria.org/) (Data Science Nigeria (DSN)), checked 2026-10-01
+- [Orange Social Venture Prize (OSVP)](https://poesa.orange.com/) (Orange Group), checked 2026-10-01
+- [EQUALS in Tech Awards 2027](https://www.equalsintech.org/awards) (EQUALS Global Partnership (ITU, UN Women and others)), checked 2026-10-25
+- [Commonwealth Foundation Grants Programme 2026-27](https://commonwealthfoundation.com/) (Commonwealth Foundation), checked 2026-10-27
+- [ALX Africa Tech Upskilling Programmes](https://tech.alxafrica.com/) (ALX Africa & Mastercard Foundation), checked 2026-10-25
+- [Ingressive For Good (I4G) Tech Training](https://ingressive.org/) (Ingressive For Good), checked 2026-10-01
+- [She Code Africa Mentorship Program](https://shecodeafrica.org/) (She Code Africa), checked 2026-10-01
+- [LSETF Tech Jobs Initiative](https://lsetf.ng/) (LSETF & Tech4Dev), checked 2026-10-01
+- [IncuVersity (THE DO ╫ Anthropic)](https://doincuversity.ai/) (THE DO, in partnership with Anthropic), checked 2026-10-25
+- [CMU-Africa Certificate in Artificial Intelligence for Africa](https://africa.engineering.cmu.edu/) (Carnegie Mellon University Africa), checked 2026-10-25
+- [CS50x: Introduction to Computer Science](https://discover.edx.org/xgs/course/introduction-computer-science-harvardx-cs50x) (HarvardX / edX), checked 2026-10-25
+- [GitHub Student Developer Pack](https://education.github.com/pack/join) (GitHub), checked 2026-10-25
+
+
+
+## 10. Known limitations / next steps
 
 ### Limitations
 - **Small dataset.** Opportunities are collected by hand from official pages, so the list is small (currently 72 number of records) and deadlines change. Always confirm details on the official page linked with each result.
