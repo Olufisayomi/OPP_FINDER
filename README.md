@@ -18,6 +18,7 @@ and the deadline. Built for OPEN//BUILD 2026 (OSCA Ile-Ife, Hacktoberfest 2026).
 3. The **open-weight model** writes a short "why you may fit / what to prepare / next step".
 4. A separate team feature lets us paste a messy announcement and the model drafts a
    structured record, which a human checks before saving.
+5. If a student doesn’t qualify yet, the app doesn’t hide the opportunity. When exactly one rule fails (their level or course), it shows what is missing and suggests next steps, such as checking the official page for the next intake or looking for similar opportunities.
 
 ## 3. The model 
 - **Model:** SmolLM2-360M-Instruct by Hugging Face (HuggingFaceTB), about 360 million parameters. We run it locally through Ollama as `smollm2:360m` (725 MB download). Source: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct

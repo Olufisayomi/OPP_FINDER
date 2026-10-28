@@ -1,7 +1,7 @@
 """All talking to the open-weight model lives here.
 
 Default setup: Ollama running locally (https://ollama.com).
-    ollama pull smollm2:360m        
+    ollama pull smollm2:360m      # or any model you chose AND checked the licence of
     set MODEL_NAME to match
 
 Two jobs for the model:
@@ -21,7 +21,7 @@ import requests
 from .models import Opportunity, StudentProfile
 
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434")
-MODEL_NAME = os.getenv("MODEL_NAME", "smollm2:360m") 
+MODEL_NAME = os.getenv("MODEL_NAME", "smollm2:360m")   # Apache-2.0 per its model card (checked 2026-10-27)
 TIMEOUT = int(os.getenv("LLM_TIMEOUT", "120"))
 
 
@@ -41,7 +41,9 @@ def _chat(system: str, user: str, as_json: bool = False) -> str:
     try:
         r = requests.post(f"{OLLAMA_URL}/api/chat", json=payload, timeout=TIMEOUT)
         r.raise_for_status()
-        return r.json()["message"]["content"]
+        text = r.json()["message"]["content"]
+        # Some models (e.g. Qwen3) print their reasoning inside <think>...</think>. Hide it.
+        return re.sub(r"<think>.*?</think>", "", text, flags=re.S).strip()
     except (requests.RequestException, KeyError, ValueError) as e:
         raise LLMUnavailable(str(e)) from e
 
@@ -54,6 +56,7 @@ name, type (scholarship|internship|job|learning), organisation,
 deadline (YYYY-MM-DD or null), eligibility_text (short, copied/condensed from the text),
 levels (list from: 100,200,300,400,500,postgraduate,graduate; [] if any),
 fields (list of courses/areas; [] if any), link (url from the text or null)."""
+
 
 def parse_extraction(raw_json: str, fallback_id: str, source_link: str = "") -> Opportunity:
     """Turn the model's JSON text into a validated Opportunity. Raises ValueError if unusable."""
@@ -112,3 +115,25 @@ def explain_match(profile: StudentProfile, opp: Opportunity) -> str:
         f"Deadline: {opp.deadline}\nRules: {opp.eligibility_text}"
     )
     return _chat(EXPLAIN_SYSTEM, user).strip()
+
+
+GAP_SYSTEM = """You help a Nigerian university student who does NOT yet qualify for an opportunity.
+Use ONLY the information given. Do not invent dates, requirements, amounts or intake times.
+Never say the student qualifies. In simple English, under 80 words, write two short parts:
+Why not yet: (restate the gap you were given)
+What you can do: (two realistic steps, such as checking the official page for the next intake,
+or looking for similar opportunities open to your level or course)
+If something is not known, say 'check the official page' instead of guessing."""
+
+
+def gap_prompt(profile: StudentProfile, opp: Opportunity, gaps: list) -> str:
+    return (
+        f"Student: course={profile.course}, level={profile.level}, interests={profile.interests}\n"
+        f"Opportunity: {opp.name} ({opp.type}) by {opp.organisation}\n"
+        f"Deadline: {opp.deadline}\nRules: {opp.eligibility_text}\n"
+        "The student does NOT currently meet: " + " ".join(gaps)
+    )
+
+
+def explain_gap(profile: StudentProfile, opp: Opportunity, gaps: list) -> str:
+    return _chat(GAP_SYSTEM, gap_prompt(profile, opp, gaps)).strip()

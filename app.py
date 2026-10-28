@@ -5,6 +5,8 @@ import os
 import gradio as gr
 import requests
 
+from backend.render import to_markdown
+
 API = os.getenv("API_URL", "http://localhost:8000")
 TYPES = ["scholarship", "internship", "job", "learning"]
 LEVELS = ["100", "200", "300", "400", "500", "postgraduate", "graduate"]
@@ -24,18 +26,7 @@ def find(course, level, interests, looking_for, show_examples):
         r.raise_for_status()
     except requests.RequestException as e:
         return f"Could not reach the API at {API}. Is it running?\n\n{e}"
-    results = r.json()
-    if not results:
-        return "No open opportunities match yet. Try fewer filters."
-    out = []
-    for m in results:
-        o = m["opportunity"]
-        out.append(f"### {o['name']}  \n*{o['type']} · {o['organisation']}*")
-        out += [f"- {x}" for x in m["reasons"]]
-        if m["explanation"]:
-            out.append(f"\n{m['explanation']}")
-        out.append(f"\n[Verify on the official page]({o['link']})\n")
-    return "\n".join(out)
+    return to_markdown(r.json())
 
 
 def draft(raw_text, source_link, new_id):

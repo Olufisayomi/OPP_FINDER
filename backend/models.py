@@ -38,3 +38,16 @@ class Match(BaseModel):
     score: int
     reasons: List[str]                       # rule-based reasons (always shown)
     explanation: str = ""                    # model-written explanation (may be empty)
+
+
+class NearMiss(BaseModel):
+    """An opportunity the student does NOT qualify for yet: exactly one rule fails."""
+    opportunity: Opportunity
+    gaps: List[str]                          # plain-code description of what is missing
+    next_step: str = ""                      # rule-based fallback advice (always present)
+    explanation: str = ""                    # model-written explanation (may be empty)
+
+
+class MatchResponse(BaseModel):
+    matches: List[Match]
+    near_misses: List[NearMiss]
