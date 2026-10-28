@@ -1,68 +1,1426 @@
-
 [
   {
-    "id": "opp-001",
-    "name": "Millennium Fellowship Class of 2027",
-    "type": "learning",
-    "organisation": "Millennium Campus Network and United Nations Academic Impact",
-    "deadline": "2026-10-31",
-    "eligibility_text": "Applicants must be at least 18 years old, be enrolled undergraduate students throughout August to November 2027, and have an interest in social impact work. Applications are reviewed on a rolling basis. October 31, 2026 is the next priority deadline.",
-    "levels": ["100", "200", "300", "400", "500"],
-    "fields": [],
-    "link": "https://www.millenniumfellows.org/apply",
-    "date_collected": "2026-10-26",
+    "id": "mtn-science-and-technology-scholarship-sts",
+    "name": "MTN Science and Technology Scholarship (STS)",
+    "type": "scholarship",
+    "organisation": "MTN Foundation",
+    "deadline": null,
+    "eligibility_text": "Full-time student in a Nigerian public tertiary institution; min CGPA 3.0/4 or 3.5/5 (universities, colleges of education); OND 3.0 with HND admission for polytechnics; medical students need a pass grade. Apply via apps.mtn.ng/scholarships/form",
+    "levels": [
+      "300",
+      "400",
+      "graduate"
+    ],
+    "fields": [
+      "Science",
+      "Technology",
+      "Engineering",
+      "Mathematics",
+      "Medicine"
+    ],
+    "link": "https://www.mtn.ng/scholarships/",
+    "date_collected": "2026-10-25",
     "is_example": false
   },
   {
-    "id": "opp-002",
+    "id": "mtn-scholarship-for-blind-students-sbs",
+    "name": "MTN Scholarship for Blind Students (SBS)",
+    "type": "scholarship",
+    "organisation": "MTN Foundation",
+    "deadline": null,
+    "eligibility_text": "Blind students in Nigerian public tertiary institutions; min CGPA 2.5 (universities/colleges of education) or 2.0 OND with HND admission (polytechnics)",
+    "levels": [
+      "200",
+      "300",
+      "graduate"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "link": "https://www.mtn.ng/scholarships/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "mtn-top-10-utme-scholarship",
+    "name": "MTN Top 10 UTME Scholarship",
+    "type": "scholarship",
+    "organisation": "MTN Foundation",
+    "deadline": null,
+    "eligibility_text": "Top 10 UTME scorers as announced by JAMB qualify automatically, in any public or private Nigerian tertiary institution",
+    "levels": [
+      "100",
+      "graduate"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "link": "https://www.mtn.ng/scholarships/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "mtn-foundation-muson-music-scholarship",
+    "name": "MTN Foundation–MUSON Music Scholarship",
+    "type": "scholarship",
+    "organisation": "MTN Foundation & MUSON",
+    "deadline": null,
+    "eligibility_text": "5 SSCE credits incl. English; Grade 5+ Music Theory & Practical certificates (MUSON/ABRSM/Trinity); valid JAMB result",
+    "levels": [],
+    "fields": [
+      "Music (performance",
+      "theory",
+      "composition)"
+    ],
+    "link": "https://www.mtn.ng/muson/",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "nlng-undergraduate-scholarship-scheme",
+    "name": "NLNG Undergraduate Scholarship Scheme",
+    "type": "scholarship",
+    "organisation": "Nigeria LNG Limited (NLNG)",
+    "deadline": null,
+    "eligibility_text": "Nigerian citizen; first-year student in an accredited Nigerian university; open to persons living with disabilities",
+    "levels": [
+      "100",
+      "graduate"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "link": "https://jobs.dragnet-solutions.com/nlngscholarship/home",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "mastercard-foundation-scholars-program-at-uct",
     "name": "Mastercard Foundation Scholars Program at UCT",
     "type": "scholarship",
-    "organisation": "University of Cape Town and Mastercard Foundation",
+    "organisation": "Mastercard Foundation & University of Cape Town",
     "deadline": "2026-10-31",
-    "eligibility_text": "For eligible postgraduate diploma, honours and coursework master's applicants at the University of Cape Town. Applicants must be citizens of an African country, demonstrate academic ability, face significant financial barriers to education, show leadership potential, and be committed to serving their communities. Undergraduate applications for the 2027 intake are closed. Programme-specific requirements apply.",
-    "levels": ["postgraduate"],
-    "fields": ["Commerce", "Engineering", "Health Sciences", "Humanities", "Law", "Science"],
+    "eligibility_text": "African citizen; academic talent; significant social/economic barriers; ethical leadership potential; apply to UCT first, then to the scholars programme",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate",
+      "postgraduate"
+    ],
+    "fields": [
+      "Six UCT faculties (not research-only master's/PhD",
+      "not part-time)"
+    ],
     "link": "https://uct.ac.za/mastercardfdn/apply-mastercard-foundation-scholars-program",
-    "date_collected": "2026-10-26",
+    "date_collected": "2026-10-25",
     "is_example": false
   },
   {
-    "id": "opp-003",
-    "name": "MLH Fellowship Open Source Track",
-    "type": "internship",
-    "organisation": "Major League Hacking",
-    "deadline": null,
-    "eligibility_text": "The Spring 2027 programme runs from January 25 to April 16, 2027. Applications are processed on a rolling basis and close a few weeks before the batch begins. Applicants must be over 18, know how to code proficiently in at least one programming language, communicate proficiently in English, and be able to commit at least 20 hours per week. Location and other programme requirements apply.",
-    "levels": [],
-    "fields": ["Computer Science", "Computer Engineering", "Software Engineering", "Information Technology"],
-    "link": "https://fellowship.mlh.com/programs/open-source",
-    "date_collected": "2026-10-26",
-    "is_example": false
-  },
-  {
-    "id": "opp-004",
-    "name": "Cloneshouse Internship Programme 2027",
-    "type": "internship",
-    "organisation": "Cloneshouse Foundation",
-    "deadline": "2026-11-06",
-    "eligibility_text": "Open to young and emerging professionals from eligible West African and other listed West and Central African countries, including Nigeria. Suitable interests include monitoring and evaluation, research, evidence generation, business development, development practice, and impact technology. Applicants should be curious, diligent, willing to learn, and ready to participate actively.",
-    "levels": [],
-    "fields": ["Computer Engineering", "Computer Science", "Information Technology", "Data Science", "Business", "Research"],
-    "link": "https://www.cloneshousefoundation.org/cloneshouse-internship-programme/",
-    "date_collected": "2026-10-26",
-    "is_example": false
-  },
-  {
-    "id": "opp-005",
-    "name": "Ruth Titilayo Educational Foundation Undergraduate Scholarship 2027",
+    "id": "mastercard-foundation-scholars-program-at-knust",
+    "name": "Mastercard Foundation Scholars Program at KNUST",
     "type": "scholarship",
-    "organisation": "Ruth Titilayo Educational Foundation",
+    "organisation": "Mastercard Foundation & KNUST",
+    "deadline": null,
+    "eligibility_text": "Academically talented African youth facing financial and social barriers; proven commitment to community service",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate",
+      "postgraduate"
+    ],
+    "fields": [
+      "All accredited degrees at KNUST"
+    ],
+    "link": "https://apps.knust.edu.gh/nkabomapply",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "chevening-scholarships-nigeria-2027-28",
+    "name": "Chevening Scholarships (Nigeria) 2027/28",
+    "type": "scholarship",
+    "organisation": "UK FCDO",
+    "deadline": "2026-10-06",
+    "eligibility_text": "Nigerian citizen; bachelor's degree; at least 2 years (2,800 hours) of work experience; return home for 2 years after study",
+    "levels": [
+      "postgraduate"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "link": "https://www.chevening.org/scholarship/nigeria/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "cowrywise-ambassadors-scholarship-program",
+    "name": "Cowrywise Ambassadors Scholarship Program",
+    "type": "scholarship",
+    "organisation": "Cowrywise & CFA Institute",
+    "deadline": null,
+    "eligibility_text": "Active Cowrywise Campus Ambassador; strong academic record; pursuit of finance/tech certifications",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate"
+    ],
+    "fields": [
+      "Finance",
+      "Economics",
+      "Computer Science",
+      "STEM"
+    ],
+    "link": "https://ambassadors.cowrywise.com/scholarship",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "aims-south-africa-google-deepmind-ai-for-science-master-s-scholarship",
+    "name": "AIMS South Africa – Google DeepMind AI for Science Master's Scholarship",
+    "type": "scholarship",
+    "organisation": "Google DeepMind & AIMS",
+    "deadline": "2026-03-06",
+    "eligibility_text": "African citizen resident in Africa; 4-year degree or 3-year degree plus honours; no previous AIMS scholarship; passion for maths/AI/ML",
+    "levels": [
+      "postgraduate"
+    ],
+    "fields": [
+      "AI",
+      "machine learning",
+      "mathematics (AI for Science stream)"
+    ],
+    "link": "https://ai.aims.ac.za/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "daad-in-country-in-region-scholarships",
+    "name": "DAAD In-Country / In-Region Scholarships",
+    "type": "scholarship",
+    "organisation": "DAAD (Germany)",
+    "deadline": "2026-04-29",
+    "eligibility_text": "Apply via the chosen programme; women and less-privileged candidates encouraged",
+    "levels": [
+      "postgraduate"
+    ],
+    "fields": [
+      "Development-related programmes"
+    ],
+    "link": "https://cooperation.ucad.sn/sites/default/files/ICIR_Fact%20Sheet_2027_1_compressed.pdf",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "seplat-energy-undergraduate-scholarship",
+    "name": "Seplat Energy Undergraduate Scholarship",
+    "type": "scholarship",
+    "organisation": "Seplat Energy Plc",
+    "deadline": null,
+    "eligibility_text": "200L student in a Nigerian federal or state university; min CGPA 3.5/5.0",
+    "levels": [
+      "200",
+      "graduate"
+    ],
+    "fields": [
+      "STEM",
+      "Computer Science",
+      "Engineering",
+      "Medicine"
+    ],
+    "link": "https://seplatenergy.com/sustainability/csr/",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "shell-nigeria-university-scholarship",
+    "name": "Shell Nigeria University Scholarship",
+    "type": "scholarship",
+    "organisation": "SPDC / Shell Nigeria",
+    "deadline": null,
+    "eligibility_text": "Full-time 100L student in an accredited Nigerian university; 5 WAEC/NECO credits incl. Maths and English",
+    "levels": [
+      "100",
+      "graduate"
+    ],
+    "fields": [
+      "Engineering",
+      "Computer Science",
+      "Geosciences",
+      "Medicine"
+    ],
+    "link": "https://www.shell.com.ng/sustainability/communities/scholarships.html",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "federal-government-bea-overseas-scholarship",
+    "name": "Federal Government BEA Overseas Scholarship",
+    "type": "scholarship",
+    "organisation": "Federal Ministry of Education (Nigeria)",
+    "deadline": null,
+    "eligibility_text": "Nigerian citizen; A/B in WAEC/NECO for undergraduates; minimum 2:1 for postgraduates",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate",
+      "postgraduate"
+    ],
+    "fields": [
+      "Engineering",
+      "Technology",
+      "Medicine",
+      "Agriculture"
+    ],
+    "link": "https://education.gov.ng/",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "nddc-local-postgraduate-scholarship",
+    "name": "NDDC Local Postgraduate Scholarship",
+    "type": "scholarship",
+    "organisation": "Niger Delta Development Commission",
+    "deadline": null,
+    "eligibility_text": "Niger Delta indigene; first degree minimum 2:2; admission offer from a recognised Nigerian university",
+    "levels": [
+      "graduate",
+      "postgraduate"
+    ],
+    "fields": [
+      "Engineering",
+      "Computer Science",
+      "Environmental Technology"
+    ],
+    "link": "https://www.nddc.gov.ng/",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "gates-cambridge-scholarship-2027-28",
+    "name": "Gates Cambridge Scholarship 2027/28",
+    "type": "scholarship",
+    "organisation": "Gates Cambridge Trust",
+    "deadline": "2026-12-08",
+    "eligibility_text": "Apply through Cambridge's course application; the scholarship deadline follows your course",
+    "levels": [
+      "postgraduate"
+    ],
+    "fields": [
+      "Not verified"
+    ],
+    "link": "https://www.gatescambridge.org/apply/timeline/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "commonwealth-master-s-and-phd-scholarships-2027-28",
+    "name": "Commonwealth Master's and PhD Scholarships 2027/28",
+    "type": "scholarship",
+    "organisation": "Commonwealth Scholarship Commission (UK)",
+    "deadline": "2026-10-20",
+    "eligibility_text": "Citizens of developing Commonwealth countries; study from Sept/Oct 2027",
+    "levels": [
+      "postgraduate"
+    ],
+    "fields": [
+      "Not verified"
+    ],
+    "link": "https://cscuk.fcdo.gov.uk/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "ptdf-overseas-postgraduate-scholarship-2026-27",
+    "name": "PTDF Overseas Postgraduate Scholarship 2026/27",
+    "type": "scholarship",
+    "organisation": "Petroleum Technology Development Fund (Nigeria)",
+    "deadline": "2026-02-27",
+    "eligibility_text": "Nigerian graduates with proven academic distinction; flights, tuition, insurance and living costs covered",
+    "levels": [
+      "postgraduate"
+    ],
+    "fields": [
+      "Oil",
+      "gas–relevant fields"
+    ],
+    "link": "https://scholarship.ptdf.gov.ng/guidelines",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "ptdf-in-country-scholarship-scheme-2026-27",
+    "name": "PTDF In-Country Scholarship Scheme 2026/27",
+    "type": "scholarship",
+    "organisation": "Petroleum Technology Development Fund (Nigeria)",
+    "deadline": "2026-06-05",
+    "eligibility_text": "Students at Nigerian public universities; NIN verification; stipend up to ₦700,000 plus laptop (blog source)",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate",
+      "postgraduate"
+    ],
+    "fields": [
+      "Energy / oil",
+      "gas–related"
+    ],
+    "link": "https://scholarship.ptdf.gov.ng/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "mastercard-foundation-scholars-university-of-cambridge-2026-27",
+    "name": "Mastercard Foundation Scholars, University of Cambridge 2026/27",
+    "type": "scholarship",
+    "organisation": "Mastercard Foundation / University of Cambridge",
+    "deadline": "2026-08-21",
+    "eligibility_text": "Resident in Africa; eligible course of up to one year",
+    "levels": [
+      "postgraduate"
+    ],
+    "fields": [
+      "Selected courses (e.g. MBA",
+      "MFin)"
+    ],
+    "link": "https://mastercardfoundation.fund.cam.ac.uk/news/applications-20262027-academic-year-are-now-open",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "mastercard-foundation-graduate-scholarship-university-of-toronto-2026-27",
+    "name": "Mastercard Foundation Graduate Scholarship, University of Toronto 2026/27",
+    "type": "scholarship",
+    "organisation": "Mastercard Foundation / University of Toronto",
+    "deadline": "2025-11-03",
+    "eligibility_text": "Partner-university alumni and graduating students only",
+    "levels": [
+      "graduate"
+    ],
+    "fields": [
+      "Not verified"
+    ],
+    "link": "https://internationalexperience.utoronto.ca/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "mastercard-foundation-scholars-university-of-the-western-cape",
+    "name": "Mastercard Foundation Scholars, University of the Western Cape",
+    "type": "scholarship",
+    "organisation": "Mastercard Foundation / UWC",
+    "deadline": null,
+    "eligibility_text": "Full-time study; master's applicants 30 or younger",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate",
+      "postgraduate"
+    ],
+    "fields": [
+      "Restricted fields"
+    ],
+    "link": "https://www.uwc.ac.za/study/partnerships/mastercard-foundation-scholars-program",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "mastercard-foundation-scholars-university-of-pretoria",
+    "name": "Mastercard Foundation Scholars, University of Pretoria",
+    "type": "scholarship",
+    "organisation": "Mastercard Foundation / University of Pretoria",
+    "deadline": null,
+    "eligibility_text": "Not verified",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate",
+      "postgraduate"
+    ],
+    "fields": [
+      "Not verified"
+    ],
+    "link": "https://www.up.ac.za/mastercard-foundation-scholarship-program",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "swedish-institute-scholarships-for-global-professionals-2027-28",
+    "name": "Swedish Institute Scholarships for Global Professionals 2027/28",
+    "type": "scholarship",
+    "organisation": "Swedish Institute",
+    "deadline": "2026-02-25",
+    "eligibility_text": "Not enrolled in or holding a degree from a Swedish university; programme application on universityadmissions.se first",
+    "levels": [
+      "postgraduate"
+    ],
+    "fields": [
+      "Eligible programmes only"
+    ],
+    "link": "https://si.se/en/apply/scholarships/swedish-institute-scholarships-for-global-professionals/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "stipendium-hungaricum-2027-28",
+    "name": "Stipendium Hungaricum 2027/28",
+    "type": "scholarship",
+    "organisation": "Hungary (Tempus Public Foundation)",
+    "deadline": "2026-01-15",
+    "eligibility_text": "Online application plus a Federal Scholarship Board step for Nigerian applicants",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "postgraduate"
+    ],
+    "fields": [
+      "Not verified"
+    ],
+    "link": "https://abuja.mfa.gov.hu/en/articles/general-information-and-faq-of-the-stipendium-hungaricum-scholarship-program",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "t-rkiye-scholarships-2027",
+    "name": "Türkiye Scholarships 2027",
+    "type": "scholarship",
+    "organisation": "Türkiye (YTB)",
+    "deadline": "2026-02-20",
+    "eligibility_text": "Not verified",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "postgraduate"
+    ],
+    "fields": [
+      "Not verified"
+    ],
+    "link": "https://turkiyeburslari.gov.tr/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "global-futures-scholarships-for-africa-uk-undergraduate",
+    "name": "Global Futures Scholarships for Africa (UK undergraduate)",
+    "type": "scholarship",
+    "organisation": "Listed on UCAS (provider Not verified)",
+    "deadline": "2026-04-08",
+    "eligibility_text": "A-level, IB or similar; form only after an offer; £10,000 a year for three years (secondary)",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate"
+    ],
+    "fields": [
+      "Not verified"
+    ],
+    "link": "https://www.ucas.com/explore/scholarships-and-bursaries/be6aed02-57fc-42f1-8aa8-d04e00192d42/global-futures-scholarships-for-africa---undergraduate",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "northumbria-international-scholarship-pgt-nigerian-applicants",
+    "name": "Northumbria International Scholarship (PGT, Nigerian applicants)",
+    "type": "scholarship",
+    "organisation": "Northumbria University",
+    "deadline": null,
+    "eligibility_text": "Based in Nigeria; Sept 2026 or Jan 2027 start; £6,000 fee discount",
+    "levels": [
+      "graduate",
+      "postgraduate"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "link": "https://www.ucas.com/explore/scholarships-and-bursaries/522dd965-1128-4229-9214-e4660d0f9f98/2026-27-ug-international-scholarship-for-nigerian-applicants",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "noha-erasmus-mundus-joint-master-s-in-international-humanitarian-action-2027-29",
+    "name": "NOHA Erasmus Mundus Joint Master's in International Humanitarian Action 2027–29",
+    "type": "scholarship",
+    "organisation": "NOHA Network (Erasmus Mundus)",
+    "deadline": "2026-12-15",
+    "eligibility_text": "Bachelor's degree (180 ECTS); English C1; for the EM grant you must already have graduated by the deadline; grant €1,400/month for 24 months; self-funded fee €4,000 per semester",
+    "levels": [
+      "postgraduate"
+    ],
+    "fields": [
+      "Disciplines relevant to humanitarian action"
+    ],
+    "link": "https://www.nohanet.org/masters",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "university-of-melbourne-graduate-research-scholarships",
+    "name": "University of Melbourne Graduate Research Scholarships",
+    "type": "scholarship",
+    "organisation": "University of Melbourne",
+    "deadline": null,
+    "eligibility_text": "Considered automatically when you apply to a graduate research course; 100% fee remission plus living allowance of about A$38,500 a year (2025 rate)",
+    "levels": [
+      "graduate",
+      "postgraduate"
+    ],
+    "fields": [
+      "All research areas incl. IT",
+      "computer science"
+    ],
+    "link": "https://scholarships.unimelb.edu.au/awards/graduate-research-scholarships",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "mastercard-foundation-scholars-university-of-edinburgh-2027-28",
+    "name": "Mastercard Foundation Scholars, University of Edinburgh 2027/28",
+    "type": "scholarship",
+    "organisation": "Mastercard Foundation / University of Edinburgh",
+    "deadline": "2026-10-19",
+    "eligibility_text": "Must attend a mandatory info session (15–24 Sep 2026) to get the application form; apply scholarship first, admission after award",
+    "levels": [
+      "postgraduate"
+    ],
+    "fields": [
+      "Sustainability/climate-focused programmes"
+    ],
+    "link": "https://edinburgh-global.ed.ac.uk/mastercard-foundation-scholars-program/apply-for-a-scholarship/how-to-apply",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "maastricht-university-nl-high-potential-scholarship-2027-28",
+    "name": "Maastricht University NL-High Potential Scholarship 2027/28",
+    "type": "scholarship",
+    "organisation": "Maastricht University",
+    "deadline": "2026-10-01",
+    "eligibility_text": "18 full scholarships a year; under 35 on 1 Sep 2027; no prior Dutch degree; strong grades (secondary)",
+    "levels": [
+      "postgraduate"
+    ],
+    "fields": [
+      "Participating programmes only"
+    ],
+    "link": "https://www.maastrichtuniversity.nl/support/your-studies-begin/coming-maastricht-university-abroad/scholarships/maastricht-university",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "york-university-president-s-international-scholarship-of-excellence-pise",
+    "name": "York University President's International Scholarship of Excellence (PISE)",
+    "type": "scholarship",
+    "organisation": "York University (Canada)",
+    "deadline": "2027-01-27",
+    "eligibility_text": "Nomination by a school official required; CAD 45,000 a year for four years (CAD 180,000)",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "link": "https://futurestudents.yorku.ca/financial-support",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "afox-graduate-scholarships-oxford-mba-2027-28",
+    "name": "AfOx Graduate Scholarships (Oxford MBA) 2027/28",
+    "type": "scholarship",
+    "organisation": "Africa Oxford Initiative / Mastercard Foundation / Saïd Business School",
+    "deadline": "2027-01-06",
+    "eligibility_text": "Up to 3 awards; no separate application, submit the Oxford MBA application; full fees plus living grant (at least £21,805, secondary)",
+    "levels": [],
+    "fields": [
+      "Business"
+    ],
+    "link": "https://www.sbs.ox.ac.uk/oxford-experience/scholarships-and-funding/afox-graduate-scholarships",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "nnpc-snepco-national-university-scholarship-2026",
+    "name": "NNPC/SNEPCo National University Scholarship 2026",
+    "type": "scholarship",
+    "organisation": "NNPC / SNEPCo (Shell Nigeria Exploration and Production Company)",
+    "deadline": "2026-11-30",
+    "eligibility_text": "Per your post: Nigerian citizens, full-time at NUC-accredited universities, in second year, min CGPA 3.5/5; N250,000 a year. Applications have run on the Scholastica platform",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "link": "https://www.shell.com.ng/careers/scholarships.html",
+    "date_collected": "2026-10-27",
+    "is_example": false
+  },
+  {
+    "id": "boc-sciences-chemistry-scholarship-program-2026",
+    "name": "BOC Sciences Chemistry Scholarship Program 2026",
+    "type": "scholarship",
+    "organisation": "BOC Sciences (BOCSCI Inc.)",
     "deadline": "2026-10-31",
-    "eligibility_text": "Applicants must be under 25, domiciled in Nigeria, and currently studying at a federal or state university in Nigeria, or have been registered as a student within the last three years. Applicants must have a minimum GPA of 4.0 on a 5-point scale or equivalent. Final-year undergraduates are eligible. Awards depend on academic merit and application assessment.",
-    "levels": ["100", "200", "300", "400", "500"],
-    "fields": [],
-    "link": "https://ruthtitilayofoundation.org/ruth-titilayo-undergraduate-scholarship/",
-    "date_collected": "2026-10-26",
+    "eligibility_text": "Min 3.0 GPA; recommendation letter; official transcript; original 800-1,000-word essay or 10-12-slide presentation; one USD 1,000 award a year",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate",
+      "postgraduate"
+    ],
+    "fields": [
+      "Chemistry",
+      "biochemistry",
+      "chemical engineering",
+      "chemical technology",
+      "related sciences"
+    ],
+    "link": "https://www.bocsci.com/chemistry-scholarship-program.html",
+    "date_collected": "2026-10-27",
+    "is_example": false
+  },
+  {
+    "id": "mandela-washington-fellowship-2027",
+    "name": "Mandela Washington Fellowship 2027",
+    "type": "learning",
+    "organisation": "U.S. Department of State / IREX",
+    "deadline": "2026-10-13",
+    "eligibility_text": "Resident/citizen of Sub-Saharan Africa; English fluency; leadership record",
+    "levels": [],
+    "fields": [
+      "Business",
+      "tech",
+      "civic leadership",
+      "public management"
+    ],
+    "link": "https://apply.mandelawashingtonfellowship.org/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "mwf-reciprocal-exchange-component-2027",
+    "name": "MWF Reciprocal Exchange Component 2027",
+    "type": "scholarship",
+    "organisation": "U.S. Department of State / IREX",
+    "deadline": "2026-11-11",
+    "eligibility_text": "Participants must be U.S. citizens living in the U.S.; collaborators must be Mandela Washington Fellowship alumni; grants up to $6,000 per in-person participant or $3,000 per hybrid project",
+    "levels": [
+      "graduate"
+    ],
+    "fields": [
+      "Agriculture",
+      "business",
+      "tech",
+      "health",
+      "energy",
+      "others"
+    ],
+    "link": "https://www.mandelawashingtonfellowship.org/2026/10/21/2027-reciprocal-exchange-component-application/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "millennium-fellowship-class-of-2027",
+    "name": "Millennium Fellowship Class of 2027",
+    "type": "learning",
+    "organisation": "Millennium Campus Network & UN Academic Impact",
+    "deadline": "2026-10-31",
+    "eligibility_text": "Undergraduate aged 18+; leading a social-impact project aligned to the SDGs; campus hub of 8+ applicants (older cycles)",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "link": "https://www.millenniumfellows.org/apply",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "jim-leech-mastercard-foundation-fellowship-on-entrepreneurship-2027",
+    "name": "Jim Leech Mastercard Foundation Fellowship on Entrepreneurship 2027",
+    "type": "learning",
+    "organisation": "Queen's University (DDQIC) & Mastercard Foundation",
+    "deadline": "2026-12-01",
+    "eligibility_text": "Fully virtual 8-month fellowship; an existing business or an early-stage idea is accepted; apply online through DDQIC",
+    "levels": [
+      "graduate"
+    ],
+    "fields": [
+      "Any discipline"
+    ],
+    "link": "https://www.queensu.ca/innovationcentre/programs/jim-leech-mastercard-foundation-fellowship-entrepreneurship",
+    "date_collected": "2026-10-27",
+    "is_example": false
+  },
+  {
+    "id": "cowrywise-campus-ambassadors-program",
+    "name": "Cowrywise Campus Ambassadors Program",
+    "type": "learning",
+    "organisation": "Cowrywise",
+    "deadline": null,
+    "eligibility_text": "Enrolled in a Nigerian tertiary institution or recent graduate; interest in financial literacy, tech, leadership",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "link": "https://ambassadors.cowrywise.com/register",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "google-summer-of-code-gsoc",
+    "name": "Google Summer of Code (GSoC)",
+    "type": "internship",
+    "organisation": "Google",
+    "deadline": null,
+    "eligibility_text": "Age 18+; accepted open-source project proposal; programming skills",
+    "levels": [],
+    "fields": [
+      "Software",
+      "open source"
+    ],
+    "link": "https://summerofcode.withgoogle.com/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "mlh-fellowship",
+    "name": "MLH Fellowship",
+    "type": "internship",
+    "organisation": "Major League Hacking (MLH)",
+    "deadline": null,
+    "eligibility_text": "12-week fully remote programme with a stipend; apply for upcoming start dates (hours/week and age rules not shown on the page)",
+    "levels": [],
+    "fields": [
+      "Software engineering",
+      "production engineering",
+      "web3"
+    ],
+    "link": "https://fellowship.mlh.com/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "outreachy-remote-internship",
+    "name": "Outreachy Remote Internship",
+    "type": "internship",
+    "organisation": "Software Freedom Conservancy",
+    "deadline": "2026-11-02",
+    "eligibility_text": "People who face underrepresentation or systemic bias in tech where they live; paid internship (two stipend payments totalling $7,000)",
+    "levels": [],
+    "fields": [
+      "Open source: software",
+      "design",
+      "documentation"
+    ],
+    "link": "https://www.outreachy.org/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "microsoft-leap-apprenticeship",
+    "name": "Microsoft Leap Apprenticeship",
+    "type": "internship",
+    "organisation": "Microsoft (Leap) with Africa Development Centre partners",
+    "deadline": null,
+    "eligibility_text": "16-week full-time, paid, virtual apprenticeship; by invitation; apply during windows posted on Microsoft's social channels",
+    "levels": [
+      "graduate"
+    ],
+    "fields": [
+      "Software engineering",
+      "project/product management"
+    ],
+    "link": "https://leap.microsoft.com/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "flutterwave-internship-accelerator",
+    "name": "Flutterwave Internship & Accelerator",
+    "type": "internship",
+    "organisation": "Flutterwave",
+    "deadline": null,
+    "eligibility_text": "Software engineering fundamentals; remote team skills",
+    "levels": [
+      "graduate"
+    ],
+    "fields": [
+      "Computer Science",
+      "product design",
+      "fintech"
+    ],
+    "link": "https://flutterwave.com/us/careers",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "ibm-great-minds-student-internship",
+    "name": "IBM Great Minds Student Internship",
+    "type": "internship",
+    "organisation": "IBM Research Zurich / Africa",
+    "deadline": null,
+    "eligibility_text": "Enrolled master's student at an African university; nomination by a faculty member",
+    "levels": [
+      "postgraduate"
+    ],
+    "fields": [
+      "Computer Science",
+      "AI",
+      "Applied Mathematics"
+    ],
+    "link": "https://www.research.ibm.com/labs/africa/",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "lpi-summer-intern-program-in-planetary-science-2027",
+    "name": "LPI Summer Intern Program in Planetary Science 2027",
+    "type": "internship",
+    "organisation": "Lunar and Planetary Institute (USRA), Houston",
+    "deadline": "2026-12-14",
+    "eligibility_text": "Online application only; 10-week internship in Houston (7 Jun to 13 Aug 2027 per a secondary source)",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate"
+    ],
+    "fields": [
+      "Physical/natural sciences",
+      "engineering",
+      "computer science",
+      "mathematics preferred",
+      "all eligible students considered"
+    ],
+    "link": "https://www.lpi.usra.edu/lpiintern/",
+    "date_collected": "2026-10-27",
+    "is_example": false
+  },
+  {
+    "id": "mtn-global-graduate-development-program",
+    "name": "MTN Global Graduate Development Program",
+    "type": "job",
+    "organisation": "MTN Nigeria",
+    "deadline": null,
+    "eligibility_text": "Strong graduate degree; leadership capacity; online assessments",
+    "levels": [
+      "graduate"
+    ],
+    "fields": [
+      "CS",
+      "engineering",
+      "telecoms",
+      "STEM",
+      "business"
+    ],
+    "link": "https://www.mtn.ng/career/global-graduates/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "interswitch-graduate-trainee-programme",
+    "name": "Interswitch Graduate Trainee Programme",
+    "type": "job",
+    "organisation": "Interswitch Group",
+    "deadline": null,
+    "eligibility_text": "Minimum 2:1; NYSC completed (Nigeria); maximum age 26",
+    "levels": [
+      "graduate"
+    ],
+    "fields": [
+      "CS",
+      "computer engineering",
+      "STEM",
+      "finance"
+    ],
+    "link": "https://www.interswitchgroup.com/careers",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "access-bank-graduate-trainee-program",
+    "name": "Access Bank Graduate Trainee Program",
+    "type": "job",
+    "organisation": "Access Bank Plc",
+    "deadline": null,
+    "eligibility_text": "Minimum 2:1; NYSC completed; maximum age 26",
+    "levels": [
+      "graduate"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "link": "https://www.accessbankplc.com/careers",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "totalenergies-young-graduate-program",
+    "name": "TotalEnergies Young Graduate Program",
+    "type": "job",
+    "organisation": "TotalEnergies Nigeria",
+    "deadline": null,
+    "eligibility_text": "Bachelor's degree; under a year of post-NYSC experience; fluent English; under 26",
+    "levels": [
+      "graduate"
+    ],
+    "fields": [
+      "Engineering",
+      "CS",
+      "commercial",
+      "finance"
+    ],
+    "link": "https://totalenergies.com/careers",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "standard-bank-group-graduate-programme",
+    "name": "Standard Bank Group Graduate Programme",
+    "type": "job",
+    "organisation": "Standard Bank / Stanbic IBTC",
+    "deadline": null,
+    "eligibility_text": "African citizen; minimum 2:1 or equivalent",
+    "levels": [
+      "graduate",
+      "postgraduate"
+    ],
+    "fields": [
+      "CS",
+      "data analytics",
+      "IT",
+      "finance",
+      "engineering"
+    ],
+    "link": "https://www.standardbank.com/careers",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "kpmg-nigeria-graduate-trainee-programme",
+    "name": "KPMG Nigeria Graduate Trainee Programme",
+    "type": "job",
+    "organisation": "KPMG Nigeria",
+    "deadline": null,
+    "eligibility_text": "Minimum 2:1; 5 O'Level credits incl. English and Maths; NYSC discharge; under 26",
+    "levels": [
+      "graduate"
+    ],
+    "fields": [
+      "Any discipline"
+    ],
+    "link": "https://home.kpmg/ng/en/home/careers.html",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "pwc-nigeria-graduate-trainee-programme",
+    "name": "PwC Nigeria Graduate Trainee Programme",
+    "type": "job",
+    "organisation": "PwC Nigeria",
+    "deadline": null,
+    "eligibility_text": "Second Class Upper; NYSC completed; analytical and digital aptitude",
+    "levels": [
+      "graduate"
+    ],
+    "fields": [
+      "CS",
+      "cybersecurity",
+      "analytics",
+      "finance",
+      "STEM"
+    ],
+    "link": "https://www.pwc.com/ng/en/careers.html",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "volvo-group-graduate-programs-sweden-2027-intake",
+    "name": "Volvo Group Graduate Programs (Sweden) 2027 intake",
+    "type": "job",
+    "organisation": "Volvo Group",
+    "deadline": null,
+    "eligibility_text": "12-month programme with a permanent position from day one; apply through Volvo's job site",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate",
+      "postgraduate"
+    ],
+    "fields": [
+      "Engineering",
+      "finance",
+      "operations",
+      "IT tracks"
+    ],
+    "link": "https://www.volvogroup.com/careers",
+    "date_collected": "2026-10-27",
+    "is_example": false
+  },
+  {
+    "id": "american-impact-award",
+    "name": "American Impact Award",
+    "type": "scholarship",
+    "organisation": "U.S. Department of State / IREX",
+    "deadline": null,
+    "eligibility_text": "Open to Reciprocal Exchange alumni who are U.S. citizens; grants up to $3,000; grant period 1 Sep 2026 to 30 Nov 2027",
+    "levels": [],
+    "fields": [
+      "Agriculture",
+      "business",
+      "tech",
+      "health",
+      "energy",
+      "others"
+    ],
+    "link": "https://www.mandelawashingtonfellowship.org/2026/09/01/american-impact-award-application-now-open/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "mtn-y-ellopreneur-grant-loan-initiative",
+    "name": "MTN Y'ellopreneur Grant & Loan Initiative",
+    "type": "scholarship",
+    "organisation": "MTN Foundation",
+    "deadline": null,
+    "eligibility_text": "Nigerian female entrepreneur; business plan; pitch for equipment loan/grant up to ₦5M",
+    "levels": [
+      "graduate"
+    ],
+    "fields": [
+      "Any business or technology sector"
+    ],
+    "link": "https://www.mtn.ng/foundation/",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "hult-prize-ef-hult-prize-2026-27",
+    "name": "Hult Prize (EF Hult Prize) 2026–27",
+    "type": "scholarship",
+    "organisation": "Hult Prize Foundation / EF",
+    "deadline": null,
+    "eligibility_text": "Teams of 2–4 currently enrolled in a degree-seeking programme; all members 18+ by 28 Feb 2027; pick one SDG",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate"
+    ],
+    "fields": [
+      "All Fields"
+    ],
+    "link": "https://www.hultprize.org/register",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "tony-elumelu-foundation-entrepreneurship-programme",
+    "name": "Tony Elumelu Foundation Entrepreneurship Programme",
+    "type": "scholarship",
+    "organisation": "Tony Elumelu Foundation",
+    "deadline": null,
+    "eligibility_text": "Early-stage business or idea operating in Africa; $5,000 non-refundable seed funding plus training (2025 figure)",
+    "levels": [
+      "graduate"
+    ],
+    "fields": [
+      "All sectors"
+    ],
+    "link": "https://www.tefconnect.com/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "data-science-nigeria-ai-hackathon",
+    "name": "Data Science Nigeria AI Hackathon",
+    "type": "scholarship",
+    "organisation": "Data Science Nigeria (DSN)",
+    "deadline": null,
+    "eligibility_text": "Pre-qualification Kaggle hackathon; Python, SQL, ML",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate",
+      "postgraduate"
+    ],
+    "fields": [
+      "CS",
+      "AI",
+      "data science"
+    ],
+    "link": "https://datasciencenigeria.org/",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "orange-social-venture-prize-osvp",
+    "name": "Orange Social Venture Prize (OSVP)",
+    "type": "scholarship",
+    "organisation": "Orange Group",
+    "deadline": null,
+    "eligibility_text": "ICT project solving a social/environmental challenge; enterprise under 3 years old",
+    "levels": [],
+    "fields": [
+      "ICT",
+      "mobile solutions",
+      "social tech"
+    ],
+    "link": "https://poesa.orange.com/",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "equals-in-tech-awards-2027",
+    "name": "EQUALS in Tech Awards 2027",
+    "type": "scholarship",
+    "organisation": "EQUALS Global Partnership (ITU, UN Women and others)",
+    "deadline": "2026-11-07",
+    "eligibility_text": "Three award categories; the project must still be ongoing",
+    "levels": [],
+    "fields": [
+      "Digital gender equality"
+    ],
+    "link": "https://www.equalsintech.org/awards",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "commonwealth-foundation-grants-programme-2026-27",
+    "name": "Commonwealth Foundation Grants Programme 2026-27",
+    "type": "scholarship",
+    "organisation": "Commonwealth Foundation",
+    "deadline": "2026-10-26",
+    "eligibility_text": "Civil-society and creative organisations, or collectives; individual organisation grants GBP 15,000-30,000 a year, collective grants GBP 15,000-20,000 a year, up to 2 years",
+    "levels": [],
+    "fields": [
+      "Climate",
+      "environmental justice",
+      "economic inclusion",
+      "freedom of expression"
+    ],
+    "link": "https://commonwealthfoundation.com/",
+    "date_collected": "2026-10-27",
+    "is_example": false
+  },
+  {
+    "id": "alx-africa-tech-upskilling-programmes",
+    "name": "ALX Africa Tech Upskilling Programmes",
+    "type": "learning",
+    "organisation": "ALX Africa & Mastercard Foundation",
+    "deadline": null,
+    "eligibility_text": "Laptop and reliable internet; 15–40 hours/week",
+    "levels": [],
+    "fields": [
+      "Software engineering",
+      "cloud",
+      "data",
+      "AI"
+    ],
+    "link": "https://tech.alxafrica.com/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "ingressive-for-good-i4g-tech-training",
+    "name": "Ingressive For Good (I4G) Tech Training",
+    "type": "scholarship",
+    "organisation": "Ingressive For Good",
+    "deadline": null,
+    "eligibility_text": "Aged 18–30; complete prerequisite foundation modules",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate"
+    ],
+    "fields": [
+      "Software",
+      "UI/UX",
+      "data science"
+    ],
+    "link": "https://ingressive.org/",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "she-code-africa-mentorship-program",
+    "name": "She Code Africa Mentorship Program",
+    "type": "learning",
+    "organisation": "She Code Africa",
+    "deadline": null,
+    "eligibility_text": "Women in tech in Africa; basic knowledge of the track; 3-month mentorship",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate",
+      "postgraduate"
+    ],
+    "fields": [
+      "Software engineering",
+      "data",
+      "product design"
+    ],
+    "link": "https://shecodeafrica.org/",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "lsetf-tech-jobs-initiative",
+    "name": "LSETF Tech Jobs Initiative",
+    "type": "learning",
+    "organisation": "LSETF & Tech4Dev",
+    "deadline": null,
+    "eligibility_text": "Lagos resident with LASSRA registration; aged 18–35",
+    "levels": [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "graduate"
+    ],
+    "fields": [
+      "CS",
+      "software",
+      "cybersecurity"
+    ],
+    "link": "https://lsetf.ng/",
+    "date_collected": "2026-10-01",
+    "is_example": false
+  },
+  {
+    "id": "incuversity-the-do-anthropic",
+    "name": "IncuVersity (THE DO × Anthropic)",
+    "type": "scholarship",
+    "organisation": "THE DO, in partnership with Anthropic",
+    "deadline": "2026-10-31",
+    "eligibility_text": "Good English; an idea, prototype or problem; fee €10,000 + VAT; full and partial scholarships on need and merit",
+    "levels": [],
+    "fields": [
+      "All Fields"
+    ],
+    "link": "https://doincuversity.ai/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "cmu-africa-certificate-in-artificial-intelligence-for-africa",
+    "name": "CMU-Africa Certificate in Artificial Intelligence for Africa",
+    "type": "learning",
+    "organisation": "Carnegie Mellon University Africa",
+    "deadline": "2026-11-15",
+    "eligibility_text": "Six online courses; free for qualified applicants; enrolment by invitation",
+    "levels": [],
+    "fields": [
+      "AI",
+      "Python",
+      "machine learning",
+      "generative AI"
+    ],
+    "link": "https://africa.engineering.cmu.edu/",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "cs50x-introduction-to-computer-science",
+    "name": "CS50x: Introduction to Computer Science",
+    "type": "learning",
+    "organisation": "HarvardX / edX",
+    "deadline": null,
+    "eligibility_text": "Self-paced, about 12 weeks, free content",
+    "levels": [],
+    "fields": [
+      "Computer science"
+    ],
+    "link": "https://discover.edx.org/xgs/course/introduction-computer-science-harvardx-cs50x",
+    "date_collected": "2026-10-25",
+    "is_example": false
+  },
+  {
+    "id": "github-student-developer-pack",
+    "name": "GitHub Student Developer Pack",
+    "type": "learning",
+    "organisation": "GitHub",
+    "deadline": null,
+    "eligibility_text": "Student verification by GitHub",
+    "levels": [],
+    "fields": [
+      "Developer tools"
+    ],
+    "link": "https://education.github.com/pack/join",
+    "date_collected": "2026-10-25",
     "is_example": false
   }
 ]

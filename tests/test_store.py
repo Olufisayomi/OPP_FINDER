@@ -73,5 +73,5 @@ def test_duplicate_id_is_rejected(tmp_path):
 def test_load_real_opportunities():
     loaded = load_opportunities()
 
-    assert len(loaded) == 5
+    assert len(loaded) >= 5
     assert all(opportunity.is_example is False for opportunity in loaded)
