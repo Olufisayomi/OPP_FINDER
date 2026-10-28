@@ -209,6 +209,7 @@ Sources used (checked October 2026):
 - Explanations in Pidgin, Yoruba, Igbo and Hausa.
 - Try a larger open-weight model on a computer with more memory and compare the quality.
 - Replace the JSON file with a database such as SQLite.
+- Permanent hosting.
 - Let students save a profile and track the opportunities they've applied for.
 - **Interest-based matching.** Let students choose "match my course" or "match my interests", and use embeddings so related interests are matched by meaning (for example "writing" with "content creation" or "technical writing"). Also record, for each opportunity, whether students from other courses may apply, so the rule is not guessed from the course list.
 
