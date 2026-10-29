@@ -60,4 +60,8 @@ with gr.Blocks(title="OppFinder") as demo:
         btn.click(draft, [raw, link, nid], out)
 
 if __name__ == "__main__":
-    demo.launch(share=os.getenv("SHARE") == "1")
+    demo.launch(
+        share=os.getenv("SHARE") == "1",
+        server_name="0.0.0.0",
+        server_port=int(os.getenv("PORT", 7860))
+    )
