@@ -54,7 +54,7 @@ Run tests: `pytest`
 
 The judges can run OppFinder with the steps above. As a convenience, the screen can also be shared through a temporary public link made by Gradio. **This link is not permanent hosting.** The app still runs on one of our laptops, so the link only works while that laptop is on, online, and running the API and Ollama. It also expires after about a week.
 
-**Current demo link: https://5ebff648a818f24c65.gradio.live created at 23:32 on 28-10-26
+**Current demo link: https://4e1a18179c6693f112.gradio.live created at 00:20 on 29-10-26
 
 If the link does not open, please use the demo video or the run instructions above.
 

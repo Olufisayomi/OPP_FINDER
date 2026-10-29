@@ -50,8 +50,8 @@ with gr.Blocks(title="OppFinder") as demo:
         go = gr.Button("Find")
         result = gr.Markdown()
         go.click(find, [course, level, interests, looking_for, show_examples], result)
-if os.getenv("SHARE") != "1":
-     with gr.Tab("Add an opportunity (team use)"):
+    if os.getenv("SHARE") != "1":
+       with gr.Tab("Add an opportunity (team use)"):
         raw = gr.Textbox(label="Paste the announcement text", lines=8)
         link = gr.Textbox(label="Official link")
         nid = gr.Textbox(label="New id (e.g. scholarship-chevening-2026)")
