@@ -50,26 +50,37 @@ python app.py                         # student screen (second terminal)
 ```
 Run tests: `pytest`
 
-# Optional: temporary public demo link
+## Live Demo
 
-The judges can run OppFinder with the steps above. As a convenience, the screen can also be shared through a temporary public link made by Gradio. **This link is not permanent hosting.** The app still runs on one of our laptops, so the link only works while that laptop is on, online, and running the API and Ollama. It also expires after about a week.
+**Live application:** https://opp-finder-ui.onrender.com
 
-**Current demo link: https://4e1a18179c6693f112.gradio.live created at 00:20 on 29-10-26
+OppFinder is deployed on Render so judges can access the application through a public link. The free service may take some time to start after a period of inactivity.
 
-If the link does not open, please use the demo video or the run instructions above.
+### Temporary Gradio Demo (Backup)
 
-### How we create the link
-1. Start Ollama and the API (see "Run it").
-2. In a second terminal, from the project folder, switch on the virtual environment and run:
+A temporary public Gradio link can also be created for testing. Unlike the Render deployment, this link depends on the laptop running the application, API and Ollama, and may expire after about a week.
+
+**Temporary demo link:** https://4e1a18179c6693f112.gradio.live
+
+### Creating a Temporary Gradio Link
+
+1. Start Ollama and the API as described in the **Run it** section.
+2. In a second terminal, from the project folder, activate the virtual environment and run:
 
 ```powershell
 $env:SHARE="1"
 python app.py
 ```
 
-3. Gradio prints a public address ending in `.gradio.live`. Copy it.
+3. Copy the public address ending in `.gradio.live` printed in the terminal.
 
-Without `SHARE=1`, the app is only available on your own computer at `http://127.0.0.1:7860`, so no public link is created by accident.
+The `SHARE=1` setting enables Gradio's temporary public link and hides the team-only **Add an opportunity** tab. Without it, Gradio runs locally at `http://127.0.0.1:7860` by default and does not create a temporary public link.
+
+### Render Configuration
+
+The Gradio app uses the `PORT` environment variable provided by Render and reads `API_URL` to connect to the backend. When running locally, it defaults to `http://localhost:8000`.
+
+If the deployed application is unavailable, refer to the demo video or the local setup instructions in this README.
 
 ### What to know before using it
 - The first reply from the model can take a minute or more on our laptop CPU.
